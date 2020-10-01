@@ -1,0 +1,39 @@
+\usepackage{graphicx}
+\usepackage{mathtools}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{bm}
+\usepackage{amsbsy}
+\usepackage{mathrsfs}
+\usepackage[english]{babel}
+\usepackage{wrapfig}
+\usepackage{pdfpc}
+\usepackage{pgfpages}
+\usepackage{tikz}
+\usepackage{epstopdf}
+\usepackage{color}
+\usepackage[utf8]{inputenc}
+\usepackage{import}
+\usepackage{subfiles}
+\DeclareUnicodeCharacter{2212}{-}
+\graphicspath{{./graphics/}}
+
+\renewcommand{\logofooter}{}
+\renewcommand{\logotitle}{}%{\includegraphics[width=0.2\linewidth]{~/Documents/UCI/uci_logo.png}}
+\renewcommand{\logoheader}{}%{\includegraphics[width=0.5\linewidth]{~/Documents/UCI/uci_logo.png}}
+
+\input{math_preamble}
+
+
+\AtBeginSection[]
+{
+  \begin{frame}{Agenda}
+    \tableofcontents[currentsection]
+  \end{frame}
+}
+
+
+\author{William Black}
+
