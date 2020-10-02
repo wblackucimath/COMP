@@ -10,7 +10,7 @@ GRAPHICS_DIR := "$(PROJ_DIR)/graphics"
 
 all: $(DOC_TARGET_MAIN) 
 
-$(DOC_TARGET_MAIN): $(MAIN_SRC) $(PREAMBLES) $(SLIDES_SRC)
+$(DOC_TARGET_MAIN): $(MAIN_SRC) $(PREAMBLES) $(SLIDES_SRC) titleauthordate.tex
 	latexmk -pdf -halt-on-error -use-make -jobname=$(PROJNAME_MAIN) $(MAIN_SRC)
 
 cleanall:
